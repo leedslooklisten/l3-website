@@ -1,0 +1,22 @@
+@import '~@/styles/colors';
+
+button.button {
+  border: 1px solid;
+  border-color: transparent;
+  color: $grey;
+  cursor: pointer;
+
+  height: inherit;
+  width: inherit;
+  background-color: transparent;
+
+  &:hover {
+    border-color: $yellow-dark;
+    transition: color 100ms ease-out;
+    color: $yellow-dark;
+  }
+
+  &:focus {
+    border-color: transparent;
+  }
+}
