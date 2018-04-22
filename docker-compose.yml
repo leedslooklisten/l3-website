@@ -1,0 +1,23 @@
+version: '2'
+services:
+  nginx:
+    build:
+      context: server
+      dockerfile: docker.nginx
+    image: server
+    container_name: server-container
+    ports:
+      - "8080:8080"
+    volumes:
+      - site:/site
+  app:
+    build:
+      context: .
+      dockerfile: docker.app
+    image: app
+    container_name: app-container
+    volumes:
+      - site:/app/dist
+volumes:
+  site:
+    driver: local

@@ -1,0 +1,9 @@
+.git
+.gitignore
+LICENSE
+*.md
+README.md
+nginx.conf
+node_modules
+*.log
+docker*
