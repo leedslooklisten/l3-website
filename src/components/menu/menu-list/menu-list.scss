@@ -1,0 +1,47 @@
+@import '~@/styles/core';
+
+.menu-list {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+
+  .list-container {
+    display: flex;
+    overflow-y: auto;
+    height: 100%;
+  }
+
+  ul {
+    flex-shrink: 0;
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+
+    > li {
+      width: 100%;
+
+      > * {
+        display: inline-block;
+        text-decoration: none;
+        padding-left: 10px;
+        padding-right: 20px;
+        font-size: 35px;
+        line-height: 0.8;
+        border-left: 15px solid transparent;
+        width: 100%;
+        color: $grey;
+        transition: color 200ms ease-in, border-color 200ms ease-in;
+
+        &:hover, &.router-link-active {
+          border-left-color: $black;
+          color: $black;
+        }
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 35px;
+      }
+    }
+  }
+}
+

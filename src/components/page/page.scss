@@ -1,22 +1,41 @@
-@import '~@/styles/colors';
+@import '~@/styles/core';
 
-.not-menu {
+.page-container {
   height: 100%;
-  width: 100%;
 
-  .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.3);
-    content: '';
+  .page {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    overflow-x: hidden;
+    transition: transform 300ms ease-in-out;
+    background: $white;
+
+    &:not(.shifted) {
+      .overlay{
+        background-color: transparent;
+        pointer-events: none;
+      }
+    }
+
+    &.shifted {
+      transition: transform 500ms ease-in-out;
+      transform: translateX(100%);
+
+      .overlay{
+        transition: background-color 300ms ease-in-out;
+      }
+    }
   }
 }
 
-.page-body {
+.top-bar-logo {
+  overflow: hidden;
   height: 100%;
-  width: 100%;
+
+  img {
+    height: 60px;
+    max-width: 100%;
+  }
 }
 

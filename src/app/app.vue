@@ -1,5 +1,8 @@
 <template>
   <div id="app">
+    <Page>
+      <router-view/>
+    </Page>
   </div>
 </template>
 <script src='./app.js'></script>

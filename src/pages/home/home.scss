@@ -1,0 +1,19 @@
+@import '~@/styles/core';
+@import '~@/styles/content-card';
+
+.video-container {
+  height: calc(100vh - 40px);
+  width: 100vw;
+  background-color: black;
+}
+
+.content-card {
+  &.grey {
+    background: $light-grey;
+  }
+
+  &.black {
+    background: $black;
+    color: $white;
+  }
+}

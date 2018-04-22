@@ -1,11 +1,13 @@
 import Page from '@/components/page/page.vue';
 
 export default {
-  name: 'App',
+  name: 'Home',
   data () {
-    return {};
+    return {
+    };
   },
   components: {
     Page,
-  }
+  },
 };
+

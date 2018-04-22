@@ -1,0 +1,20 @@
+.content-card {
+  .content-section {
+    width: 100%;
+    display: block;
+  }
+  
+  $content-padding: 18px;
+  .content-body {
+    padding: $content-padding;
+    .title {
+      padding-bottom: $content-padding;
+      font-size: 25px;
+      font-weight: $bold;
+    }
+
+    .content-text {
+      padding-top: $content-padding;
+    }
+  }
+}
