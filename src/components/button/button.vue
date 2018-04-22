@@ -1,7 +1,7 @@
 <template>
-  <button class='button'>
+  <div class='button'>
     <slot> Submit </slot>
-  </button>
+  </div>
 </template>
 <script src='./button.js'></script>
 <style src='./button.scss' lang='scss' scoped></style>
