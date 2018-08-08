@@ -27,15 +27,19 @@ class MenuBar extends Component {
   render() {
     return (
       <div class="menuBar">
-        <div class="leftMenuBarButtons">
-          <HamburgerNav />
-          <MenuBarButton label='home' />
-          <MenuBarButton label='step into the studio' />
-          <MenuBarButton label='our story' />
+        <div>
+          <div class="leftMenuBarButtons">
+            <HamburgerNav />
+            <MenuBarButton label='home' />
+            <MenuBarButton label='step into the studio' />
+            <MenuBarButton label='our story' />
+          </div>
         </div>
-        <div class="menuBarLogo" />
-        <div class="rightMenuBarButtons">
-          <div class="placeholderRightButton" />
+        <div>
+          <div class="menuBarLogo" />
+          <div class="rightMenuBarButtons">
+            <div class="placeholderRightButton" />
+          </div>
         </div>
       </div>
     )

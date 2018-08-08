@@ -5,6 +5,25 @@
   align-content: center;
   justify-content: space-between;
   white-space: nowrap;
+  overflow: hidden;
+}
+
+.menuBar > div {
+  display: flex;
+}
+
+.menuBar > div:first-child {
+  margin-right: 50px;
+}
+
+.menuBar > div:last-child {
+  width: 50%;
+
+  justify-content: space-between;
+}
+
+.menuBar > div:last-child .menuBarLogo {
+  margin-left: -50px;
 }
 
 .leftMenuBarButtons, .menuBarLogo {
