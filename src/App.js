@@ -65,6 +65,83 @@ class CloseupLight extends Component {
   }
 }
 
+function InSituImage(props) {
+  return (
+    <div class="inSituImage"><p class="heading">High-fidelity sound for a new generation</p></div>
+  )
+}
+
+class CloseupDark extends Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    return (
+      <div class="closeupDark">
+        <div class="closeupDarkImage" />
+        <div class="closeupDarkText">
+          <p class="heading">Embrace the darkness of</p>
+          <p>
+            Designed with the user's overall experience in mind, the Studio references the great
+            industrial designers of generations past. Whether placed in a 1960s mid-century modern
+            or digital space-age home, it suits any environment. With 4 aesthetic variations, pick
+            the Studio that suits your life best.
+          </p>
+          <p><button>see more</button></p>
+        </div>
+      </div>
+    )
+  }
+}
+
+class GoogleIntegration extends Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    return (
+      <div class="googleIntegration">
+        <div class="heading">Remote Control | Google Voice Assistant</div>
+        <div>
+          Our speaker is more than just a speaker. Use your voice to interact with the Studio 7's
+          one-of-a-kind remote to choose songs to play, set reminders, or control other devices
+          around your home.
+        </div>
+        <div class="googleHomeLogo" />
+        <div class="googleHomeCommands">
+          <div class="fadeTop">Ok Google, turn it up.</div>
+          <div>Ok Google, next song.</div>
+          <div class="fadeBottom">Ok Google, remind me to buy groceries.</div>
+        </div>
+        <div class="googleHomeDeviceImage" />
+      </div>
+    );
+  }
+}
+
+class Acoustics extends Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    return (
+      <div class="acoustics">
+        <div class="heading">Acoustics | Ultra High Fidelity</div>
+        <div>
+          The Studio 7 is constructed by using the best-in-class premium audio components, a
+          high-quality build process and a meticulously-refined speaker enclosure. By joining
+          those individual elements into one distinctly beautiful package, leeds was able to
+          create a sound qualtity that is never heard before in the streaming speaker segment.
+        </div>
+        <div class="acousticsImage" />
+      </div>
+    )
+  }
+}
+
 class App extends Component {
   render() {
     return (
@@ -73,20 +150,10 @@ class App extends Component {
         <VideoPlayer />
         <ImageTumbler />
         <CloseupLight />
-        <div class="inSituImage"><p class="heading">High-fidelity sound for a new generation</p></div>
-        <div class="closeupDark">
-          <div class="closeupDarkImage" />
-          <div class="closeupDarkText">
-            <p class="heading">Embrace the darkness of</p>
-            <p>
-              Designed with the user's overall experience in mind, the Studio references the great
-              industrial designers of generations past. Whether placed in a 1960s mid-century modern
-              or digital space-age home, it suits any environment. With 4 aesthetic variations, pick
-              the Studio that suits your life best.
-            </p>
-            <p><button>see more</button></p>
-          </div>
-        </div>
+        <InSituImage />
+        <CloseupDark />
+        <GoogleIntegration />
+        <Acoustics />
       </div>
     );
   }
