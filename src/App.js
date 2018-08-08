@@ -138,7 +138,109 @@ class Acoustics extends Component {
         </div>
         <div class="acousticsImage" />
       </div>
-    )
+    );
+  }
+}
+
+function InstantSetupStep(props) {
+  return (
+    <div class="instantSetupStep">
+      <div class="heading">{props.stepNumber}</div>
+      <div class={props.iconClass} />
+    </div>
+  )
+}
+
+class InstantSetup extends Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    return (
+      <div class="instantSetup">
+        <div class="heading">Instant setup. It's</div>
+        <div class="instantSetupSteps">
+          <InstantSetupStep stepNumber="1" iconClass="plugIcon" />
+          <InstantSetupStep stepNumber="2" iconClass="phoneIcon" />
+          <InstantSetupStep stepNumber="3" iconClass="wifiIcon" />
+        </div>
+        <div>
+          Set up the Studio 7 in a few simple steps out of the box. Plug it in, download the
+          Google Home app on your phone or tablet and connect to Wi-Fi to start streaming.
+        </div>
+      </div>
+    );
+  }
+}
+
+function FeatureGridItem(props) {
+  const iconClass = props.iconClass + " featureGridItemIcon";
+  return (
+    <div class="featureGridItem">
+      <div class={iconClass} />
+      <div>{props.label}</div>
+    </div>
+  );
+}
+
+class MoreFeatures extends Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    return (
+      <div class="moreFeatures">
+        <div class="heading">Even more features</div>
+        <div class="featuresGrid">
+          <div>
+            <FeatureGridItem iconClass="angleAdjustIcon" label="Choose from 2 adjustable" />
+            <FeatureGridItem iconClass="tunerIcon" label="Digitally tunes to" />
+            <FeatureGridItem iconClass="pairIcon" label="Pair 2 speakers for" />
+          </div>
+          <div>
+            <FeatureGridItem iconClass="streamSoftwareIcon" label="Stream" />
+            <FeatureGridItem iconClass="turntableIcon" label="Turntable (AUX input)" />
+            <FeatureGridItem iconClass="speakerGroupIcon" label="Group speakers" />
+          </div>
+        </div>
+      </div> 
+    );
+  }
+}
+
+class JoinWaitlist extends Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    return (
+      <div class="joinWaitlist">
+        <div><button>join the waitlist</button></div>
+        <div class="frontFacingWhiteImage" />
+      </div>
+    );
+  }
+}
+
+class Footer extends Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    return (
+      <div class="footer">
+        <ul class="unlist footerLinks">
+          <li><span>Our Story</span></li>
+          <li><span>Step Into the Studio</span></li>
+          <li><span>Contact us</span></li>
+        </ul>
+        <div>Leeds Look Listen, Inc. 2018</div>
+      </div>
+    );
   }
 }
 
@@ -154,6 +256,10 @@ class App extends Component {
         <CloseupDark />
         <GoogleIntegration />
         <Acoustics />
+        <InstantSetup />
+        <MoreFeatures />
+        <JoinWaitlist />
+        <Footer />
       </div>
     );
   }
