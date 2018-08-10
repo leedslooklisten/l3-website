@@ -8,10 +8,6 @@ function HamburgerNav(props) {
 }
 
 class MenuBarButton extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <div class="menuBarButton"><div>{this.props.label}</div></div>
@@ -20,10 +16,6 @@ class MenuBarButton extends Component {
 }
 
 class MenuBar extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <div class="menuBar">

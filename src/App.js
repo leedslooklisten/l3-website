@@ -1,13 +1,8 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import MenuBar from './MenuBar';
 
 class VideoPlayer extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <div class="fancyVideo">
@@ -23,10 +18,6 @@ class VideoPlayer extends Component {
 }
 
 class ImageTumbler extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <div class="tumbler">
@@ -45,10 +36,6 @@ class ImageTumbler extends Component {
 }
 
 class CloseupLight extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <div class="closeupLight">
@@ -72,16 +59,12 @@ function InSituImage(props) {
 }
 
 class CloseupDark extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <div class="closeupDark">
         <div class="closeupDarkImage" />
         <div class="closeupDarkText">
-          <p class="heading">Embrace the darkness of</p>
+          <p class="heading">Embrace the darkness of the night</p>
           <p>
             Designed with the user's overall experience in mind, the Studio references the great
             industrial designers of generations past. Whether placed in a 1960s mid-century modern
@@ -96,10 +79,6 @@ class CloseupDark extends Component {
 }
 
 class GoogleIntegration extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <div class="googleIntegration">
@@ -122,10 +101,6 @@ class GoogleIntegration extends Component {
 }
 
 class Acoustics extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <div class="acoustics">
@@ -152,10 +127,6 @@ function InstantSetupStep(props) {
 }
 
 class InstantSetup extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <div class="instantSetup">
@@ -185,10 +156,6 @@ function FeatureGridItem(props) {
 }
 
 class MoreFeatures extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <div class="moreFeatures">
@@ -211,10 +178,6 @@ class MoreFeatures extends Component {
 }
 
 class JoinWaitlist extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <div class="joinWaitlist">
@@ -226,10 +189,6 @@ class JoinWaitlist extends Component {
 }
 
 class Footer extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <div class="footer">

@@ -52,14 +52,9 @@ button {
 }
 
 .heading {
-  /* font-family: 'Engschrift'; 
-    font-size: 35px;
-    line-height: 38px;
-  */
-  font-family: 'Open Sans';
-  font-size: 30px;
+  font-family: 'Engschrift'; 
+  font-size: 35px;
   line-height: 38px;
-  font-weight: bold;
 }
 
 .fancyVideo {
@@ -201,7 +196,7 @@ button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 370px;
+  width: 450px;
   right: 50%;
 }
 
