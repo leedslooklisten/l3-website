@@ -1,0 +1,84 @@
+.menuBar {
+  display: flex;
+  background-color: var(--charcoal);
+  height: 42px;
+  align-content: center;
+  justify-content: space-between;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.menuBar > div {
+  display: flex;
+}
+
+.menuBar > div:first-child {
+  margin-right: 50px;
+}
+
+.menuBar > div:last-child {
+  width: 50%;
+
+  justify-content: space-between;
+}
+
+.menuBar > div:last-child .menuBarLogo {
+  margin-left: -50px;
+}
+
+.leftMenuBarButtons, .menuBarLogo {
+  display: flex;
+}
+
+
+.hamburgerNav {
+  display: flex;
+  height: 100%;
+  width: 42px;
+  margin-right: 1em;
+  background: url('/img/7EgBSGIzBeYUYnZ60fDtlYLBWbgT2zed.svg') no-repeat center;
+  background-size: 1em;
+  opacity: .8;
+  cursor: pointer;
+}
+
+.hamburgerNav:hover {
+  opacity: 1;
+}
+
+
+.menuBarButton {
+  height: 100%;
+  margin: 0 .8em;
+  color: var(--medium-gray);
+  display: flex;
+  cursor: pointer;
+}
+
+.menuBarButton:hover {
+  color: var(--light-gray);
+}
+
+.menuBarButton > div {
+  display: flex;
+  align-self: center;
+  position: relative;
+  bottom: 2px;
+}
+
+.menuBarLogo {
+  background: url('/img/usEjY0cl54B9cCBYVdPxlLma0SJ4Pupb.png') no-repeat 0 -23px;
+  background-size: 100px;
+  height: 100%;
+  width: 100px;
+}
+
+/** TODO: Get rid of this once the right nav has a job */
+.placeholderRightButton {
+  background: url('/img/ROEICuy6tWFHdXaISK8wBPhEY0ppsebs.png') no-repeat center;
+  background-size: 3em;
+  display:flex;
+  height: 100%;
+  width: 50px;
+  margin-right: 1em;
+}
