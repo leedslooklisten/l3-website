@@ -61,9 +61,11 @@ button {
   min-width: 100%;
   min-height: 100%;
   overflow: hidden;
+  /* video top and bottom z-shadow: */
   box-shadow: 0px 2px 14px 0px rgba(0,0,0,0.75);
 }
 
+/* only applies to <video> elements with a parent of class .fancyVideo */
 .fancyVideo > video {
   width: 100%;
   display: block;
