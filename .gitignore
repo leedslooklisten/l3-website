@@ -9,6 +9,9 @@
 # production
 /build
 
+# linux executable
+l3-website
+
 # misc
 .DS_Store
 .env.local
