@@ -2,9 +2,9 @@ import React from "react";
 
 const InstantSetup = () => {
     return(
-        <div class="instantSetup">
-            <div class="heading">Instant setup. It's</div>
-            <div class="instantSetupSteps">
+        <div className="instantSetup">
+            <div className="heading">Instant setup. It's</div>
+            <div className="instantSetupSteps">
                 <InstantSetupStep stepNumber="1" iconClass="plugIcon" />
                 <InstantSetupStep stepNumber="2" iconClass="phoneIcon" />
                 <InstantSetupStep stepNumber="3" iconClass="wifiIcon" />
@@ -19,9 +19,9 @@ const InstantSetup = () => {
 
 function InstantSetupStep(props) {
     return (
-        <div class="instantSetupStep">
-            <div class="heading">{props.stepNumber}</div>
-            <div class={props.iconClass} />
+        <div className="instantSetupStep">
+            <div className="heading">{props.stepNumber}</div>
+            <div className={props.iconClass} />
         </div>
     )
 }

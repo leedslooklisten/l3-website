@@ -2,9 +2,9 @@ import React from "react";
 
 const MoreFeatures = () => {
     return(
-        <div class="moreFeatures">
-            <div class="heading">Even more features</div>
-            <div class="featuresGrid">
+        <div className="moreFeatures">
+            <div className="heading">Even more features</div>
+            <div className="featuresGrid">
                 <div>
                     <FeatureGridItem iconClass="angleAdjustIcon" label="Choose from 2 adjustable" />
                     <FeatureGridItem iconClass="tunerIcon" label="Digitally tunes to" />
@@ -25,8 +25,8 @@ const MoreFeatures = () => {
 function FeatureGridItem(props) {
     const iconClass = props.iconClass + " featureGridItemIcon";
     return (
-        <div class="featureGridItem">
-            <div class={iconClass} />
+        <div className="featureGridItem">
+            <div className={iconClass} />
             <div>{props.label}</div>
         </div>
     );

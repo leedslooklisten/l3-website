@@ -3,14 +3,14 @@ import React from "react";
 const ImageTumbler = () => {
 
     return (
-        <div class="tumbler">
-            <div class="tumblerItem0" />
-            <div class="tumblerItem1" />
-            <div class="tumblerItem2" />
-            <div class="tumblerItem3" />
-            <div class="tumblerItem4" />
-            <div class="tumblerCallout">
-                <p class="heading">Reimagining the music experience</p>
+        <div className="tumbler">
+            <div className="tumblerItem0" />
+            <div className="tumblerItem1" />
+            <div className="tumblerItem2" />
+            <div className="tumblerItem3" />
+            <div className="tumblerItem4" />
+            <div className="tumblerCallout">
+                <p className="heading">Reimagining the music experience</p>
                 <p>
                     <button>see more</button>
                 </p>

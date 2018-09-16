@@ -2,10 +2,10 @@ import React from "react";
 
 const CloseupDark = () => {
     return (
-        <div class="closeupDark">
-            <div class="closeupDarkImage" />
-            <div class="closeupDarkText">
-            <p class="heading">Embrace the darkness of the night</p>
+        <div className="closeupDark">
+            <div className="closeupDarkImage" />
+            <div className="closeupDarkText">
+            <p className="heading">Embrace the darkness of the night</p>
             <p>
                 Designed with the user's overall experience in mind, the Studio references the great
                 industrial designers of generations past. Whether placed in a 1960s mid-century modern

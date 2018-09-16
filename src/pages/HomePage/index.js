@@ -32,8 +32,8 @@ class HomePage extends Component{
 
 function InSituImage(props) {
     return (
-        <div class="inSituImage">
-            <p class="heading">High-fidelity sound for a new generation</p>
+        <div className="inSituImage">
+            <p className="heading">High-fidelity sound for a new generation</p>
         </div>
     )
 }

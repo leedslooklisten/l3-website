@@ -2,8 +2,8 @@ import React from "react";
 
 const Footer = () => {
     return (
-        <div class="footer">
-            <ul class="unlist footerLinks">
+        <div className="footer">
+            <ul className="unlist footerLinks">
                 <li><span>Our Story</span></li>
                 <li><span>Step Into the Studio</span></li>
                 <li><span>Contact us</span></li>
