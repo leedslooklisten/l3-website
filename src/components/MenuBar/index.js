@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
 import './MenuBar.css';
 
 function HamburgerNav(props) {
@@ -26,9 +27,9 @@ class MenuBar extends Component {
         <div>
           <div className="leftMenuBarButtons">
             <HamburgerNav />
-            <MenuBarButton label='home' />
-            <MenuBarButton label='step into the studio' />
-            <MenuBarButton label='our story' />
+            <Link to="/"><MenuBarButton label='home' /></Link>
+            <Link to="/stepintothestudio"><MenuBarButton label='step into the studio' /></Link>
+            <Link to="/story"><MenuBarButton label='our story' /></Link>
           </div>
         </div>
         <div>
