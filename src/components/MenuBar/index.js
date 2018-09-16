@@ -3,14 +3,18 @@ import './MenuBar.css';
 
 function HamburgerNav(props) {
   return (
-    <div class="hamburgerNav" />
+    <div className="hamburgerNav" />
   );
 }
 
 class MenuBarButton extends Component {
   render() {
     return (
-      <div class="menuBarButton"><div>{this.props.label}</div></div>
+      <div className="menuBarButton">
+        <div>
+          {this.props.label}
+        </div>
+      </div>
     );
   }
 }
@@ -18,9 +22,9 @@ class MenuBarButton extends Component {
 class MenuBar extends Component {
   render() {
     return (
-      <div class="menuBar">
+      <div className="menuBar">
         <div>
-          <div class="leftMenuBarButtons">
+          <div className="leftMenuBarButtons">
             <HamburgerNav />
             <MenuBarButton label='home' />
             <MenuBarButton label='step into the studio' />
@@ -28,9 +32,9 @@ class MenuBar extends Component {
           </div>
         </div>
         <div>
-          <div class="menuBarLogo" />
-          <div class="rightMenuBarButtons">
-            <div class="placeholderRightButton" />
+          <div className="menuBarLogo" />
+          <div className="rightMenuBarButtons">
+            <div className="placeholderRightButton" />
           </div>
         </div>
       </div>

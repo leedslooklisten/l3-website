@@ -30,7 +30,6 @@
   display: flex;
 }
 
-
 .hamburgerNav {
   display: flex;
   height: 100%;
@@ -45,7 +44,6 @@
 .hamburgerNav:hover {
   opacity: 1;
 }
-
 
 .menuBarButton {
   height: 100%;
