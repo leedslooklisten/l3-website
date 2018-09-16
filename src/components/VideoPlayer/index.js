@@ -9,7 +9,7 @@ import React from "react";
 const VideoPlayer = () => {
     return (
         <div class="fancyVideo">
-            <video autoPlay loop="loop" preload="auto" muted="true">
+            <video autoPlay loop="loop" preload="auto" muted>
                 <source src="https://storage.googleapis.com/leedssound.com/Leeds_Studio7_LaunchVideo%5B1080pWEB%5D.mp4" type="video/mp4"/> 
                 Your browser does not support the HTML 5 video tag.
             </video>

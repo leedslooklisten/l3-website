@@ -10,9 +10,7 @@ const CloseupLight = () => {
                 making their albums. Music emerges from a silent background - focused, powerful, 
                 and emotionally direct.
             </p>
-            <p>
-                <div class="closeupLightImage" />
-            </p>
+            <div class="closeupLightImage" />
         </div>
     );
 };
