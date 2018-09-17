@@ -29,7 +29,7 @@ class MenuBar extends Component {
             <HamburgerNav />
             <Link to="/"><MenuBarButton label='home' /></Link>
             <Link to="/stepintothestudio"><MenuBarButton label='step into the studio' /></Link>
-            <Link to="/story"><MenuBarButton label='our story' /></Link>
+            <Link to="/ourstory"><MenuBarButton label='our story' /></Link>
           </div>
         </div>
         <div>
